@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="gridheader">
     <h1>Ichiban Sushi</h1>
     <a href="index.html">
       <img src="images/sushilogo.png" alt="Ichiban Sushi" width="100" />
@@ -27,20 +27,17 @@
   </nav>
 
   <main>
-    <div>
-      <div>
+    <section class="landing">
+      <div class="griditem1">
         <button class="menubutton">
-          <a class="menulink" href="menu.html">View the Menu</a>
+          <a href="menu.html">View the Menu</a>
         </button>
       </div>
-      <div>
+      <div class="griditem2">
         <button class="place">
           <a href="contact.html">Place an Order</a>
         </button>
-      </div>
-      <div>
         <h3>Open Hours</h3>
-      </div>
       <ul>
         <li>Sunday, 4pm-8pm</li>
         <li>Monday-Friday, 12pm-8pm</li>
@@ -49,103 +46,107 @@
       <h3>Location</h3>
       <p>932 Fitzgerald Ave, Courtenay, BC</p>
     </div>
-  </main>
-  <h2>Menu</h2>
-  <div>
-    <div>
-      <aside class="menu">
-        <div>
-          <h3>Appetizers</h3>
-          <figure>
-            <img src="images/gyoza.jpg" alt="gyoza" width="300" />
-          </figure>
-          <table>
-            <tr>
-              <td>Gyoza</td>
-              <td></td>
-              <td>$7.95</td>
-            </tr>
-            <tr>
-              <td>Spring Rolls</td>
-              <td></td>
-              <td>$5.50</td>
-            </tr>
-            <tr>
-              <td>Spicy Grilled Tuna</td>
-              <td></td>
-              <td>$14.50</td>
-            </tr>
-            <tr>
-              <td>Sunomono Salad</td>
-              <td>(Veggie, Shrimp, Octopus, or Real Crab)</td>
-              <td>$2.50</td>
-            </tr>
-          </table>
-        </div>
-      </aside>
-      <aside class="menu">
-        <div>
-          <h3>Sushi</h3>
-          <figure>
-            <img src="images/sushi.jpg" alt="sushi" width="300" />
-          </figure>
-          <table>
-            <tr>
-              <td>Dynamite Roll</td>
-              <td>$8.50</td>
-            </tr>
-            <tr>
-              <td>Spicy Tuna Roll</td>
-              <td>$9.50</td>
-            </tr>
-            <tr>
-              <td>Real Crab California Roll</td>
-              <td>$11.95</td>
-            </tr>
-            <tr>
-              <td>Crunchy Roll</td>
-              <td>$12.95</td>
-            </tr>
-          </table>
-        </div>
-      </aside>
-      <aside class="menu">
-        <div>
-          <h3>Bento Box</h3>
-          <figure>
-            <img src="images/bentobox.jpg" alt="Bento Boxes" width="300" />
-          </figure>
-          <table>
-            <tr>
-              <td>Chicken Teriyaki Bento</td>
-              <td>$16.95</td>
-            </tr>
-            <tr>
-              <td>Beef Teriyaki Bento</td>
-              <td>$16.95</td>
-            </tr>
-            <tr>
-              <td>BBQ Duck Bento</td>
-              <td>$16.95</td>
-            </tr>
-          </table>
-        </div>
-      </aside>
-      <a href="menu.html">
-        <p>See the full menu</p>
-      </a>
-    </div>
-  </div>
+    </section>
 
-  <h2>About Us</h2>
-  <p>Flavour Text</p>
-    <div class="gmap_canvas">
-      <iframe width="1000" height="500" id="gmap_canvas"
-        src="https://maps.google.com/maps?q=932%20Fitzgerald%20Ave,%20Courtenay,%20BC&t=&z=13&ie=UTF8&iwloc=&output=embed">
-      </iframe>
-      <a href="https://www.whatismyip-address.com/divi-discount/"></a>
-      <a href="https://www.embedgooglemap.net"> </a>
-    </div>
+    <section>
+      <h2>Menu</h2>
+      <div>
+        <div>
+          <section class="menu">
+            <div>
+              <h3>Appetizers</h3>
+              <figure>
+                <img src="images/gyoza.jpg" alt="gyoza" width="300" />
+              </figure>
+              <table>
+                <tr>
+                  <td>Gyoza</td>
+                  <td></td>
+                  <td>$7.95</td>
+                </tr>
+                <tr>
+                  <td>Spring Rolls</td>
+                  <td></td>
+                  <td>$5.50</td>
+                </tr>
+                <tr>
+                  <td>Spicy Grilled Tuna</td>
+                  <td></td>
+                  <td>$14.50</td>
+                </tr>
+                <tr>
+                  <td>Sunomono Salad</td>
+                  <td>(Veggie, Shrimp, Octopus, or Real Crab)</td>
+                  <td>$2.50</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <aside class="menu">
+            <div>
+              <h3>Sushi</h3>
+              <figure>
+                <img src="images/sushi.jpg" alt="sushi" width="300" />
+              </figure>
+              <table>
+                <tr>
+                  <td>Dynamite Roll</td>
+                  <td>$8.50</td>
+                </tr>
+                <tr>
+                  <td>Spicy Tuna Roll</td>
+                  <td>$9.50</td>
+                </tr>
+                <tr>
+                  <td>Real Crab California Roll</td>
+                  <td>$11.95</td>
+                </tr>
+                <tr>
+                  <td>Crunchy Roll</td>
+                  <td>$12.95</td>
+                </tr>
+              </table>
+            </div>
+          </aside>
+          <aside class="menu">
+            <div>
+              <h3>Bento Box</h3>
+              <figure>
+                <img src="images/bentobox.jpg" alt="Bento Boxes" width="300" />
+              </figure>
+              <table>
+                <tr>
+                  <td>Chicken Teriyaki Bento</td>
+                  <td>$16.95</td>
+                </tr>
+                <tr>
+                  <td>Beef Teriyaki Bento</td>
+                  <td>$16.95</td>
+                </tr>
+                <tr>
+                  <td>BBQ Duck Bento</td>
+                  <td>$16.95</td>
+                </tr>
+              </table>
+            </div>
+          </aside>
+          <a href="menu.html">
+            <p>See the full menu</p>
+          </a>
+        </div>
+      </div>
+
+      <h2>About Us</h2>
+      <p>Flavour Text</p>
+      <div class="gmap_canvas">
+        <iframe width="1000" height="500" id="gmap_canvas"
+          src="https://maps.google.com/maps?q=932%20Fitzgerald%20Ave,%20Courtenay,%20BC&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+        <a href="https://www.whatismyip-address.com/divi-discount/"></a>
+        <a href="https://www.embedgooglemap.net"> </a>
+      </div>
+    </section>
+  </main>
   <footer>
     <nav>
       <ul>

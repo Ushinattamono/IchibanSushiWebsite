@@ -1,5 +1,5 @@
 body{
-    display:flex;
+    display: grid;
     background-image: url(images/background.png);
     background-size: cover;
     background-color:rgba(235, 85, 26, 0.5);
@@ -8,23 +8,30 @@ body{
     flex-direction: column;
 }
 header{
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 50px;
     width: 1000px;
     margin: auto;
     align-items: center;
     background-color:coral;
   }
 
-/*Header Styles*/
+    /*Header Styles*/
+    /*Ichiban Sushi header*/
 h1{
     padding: 0 0 0 100px;
 }
+
+h3{
+    font-size: 24px;
+}
   
-/*Navigation*/
+    /*Navigation*/
 nav{
     width: 1000px;
     margin: auto;
     background-color: rgb(235, 85, 26);
+    margin-bottom: 25px;
 }
 
 nav ul{
@@ -54,26 +61,23 @@ nav li:hover{
 nav li:hover a{
     color: white;
 }
+    /*End Navigation*/
 
-  /*End Navigation*/
-
-/*Buttons CSS*/
-
+    /*Buttons CSS*/
 button{
     border: none;
     background-color: rgb(255, 71, 71);
     border-radius: 10px;
-    text-align: center;
     line-height: 150%;
     font-size: 30px;
-    margin: 0px;
-    display: block;
+    align-items: center;
+    padding: 25px;
+    margin: 10px 5px 10px 0px;
     /*This box shadow is number 87 from getcssscan.com shadow examples*/
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-
+    /*link properties*/
 button a{
-    display: flex;
     text-decoration: none;
     align-items: center;
     color: white;
@@ -84,11 +88,12 @@ button a{
     text-shadow: 2px 2px 2px #000000;
 }
 
+    /*Properties for the place an order button*/
 .place{
     font-size: 28px;
-    align-items: center;
 }
 
+    /*Image background for the menu button*/
 .menubutton{
     background-image: url("images/nigiri.jpg");
     background-size: 100%;
@@ -96,14 +101,36 @@ button a{
     height: 275px;
     width: 500px;
 }
-.menulink{
-    display: flex;
-    text-align: center;
+
+/*Beginning of section and grid CSS*/
+.landing{
+    display:grid;
+    grid-template-columns: 445px 525px 500px;
+    grid-template-rows: 200px 500px 200px;
+    
 }
 
-/*End button CSS*/
+.gridheader{
+    
+}
+/*The menu picture button*/
+.griditem1{
+    grid-column-start: 2;
+}
+/*The place an order button*/
+.griditem2{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+/*Open Hours Header*/
+.griditem3{
+    grid-column-start: 2;
+    grid-row-start: 1;
 
-  /*Google Map*/
+}
+    /*End button CSS*/
+
+    /*Google Map*/
 .gmap_canvas{
     text-align: center;
 }
