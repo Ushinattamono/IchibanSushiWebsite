@@ -2,7 +2,7 @@ body{
     display: grid;
     background-image: url(images/background.png);
     background-size: cover;
-    background-color:rgba(235, 85, 26, 0.5);
+
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed;
     flex-direction: column;
@@ -10,13 +10,20 @@ body{
 header{
     display: grid;
     grid-template-columns: 300px 50px;
-    width: 1000px;
+    width: auto;
+    padding: 0px 325px;
     margin: auto;
     align-items: center;
     background-color:coral;
   }
 
+/*Removes the default margin on images*/
+  figure{
+      margin: 0;
+  }
+  
     /*Header Styles*/
+
     /*Ichiban Sushi header*/
 h1{
     padding: 0 0 0 100px;
@@ -92,6 +99,7 @@ button a{
 .place{
     font-size: 28px;
 }
+    /*End buttons CSS*/
 
     /*Image background for the menu button*/
 .menubutton{
@@ -101,36 +109,60 @@ button a{
     height: 275px;
     width: 500px;
 }
-
+/*End button CSS*/
 /*Beginning of section and grid CSS*/
 .landing{
     display:grid;
-    grid-template-columns: 445px 525px 500px;
-    grid-template-rows: 200px 500px 200px;
-    
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px 1fr;
+    }
+
+.box{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 0px;
+    background-color: #e3e2df;
+    /*This box shadow is number 23 from the getcssscan.com website shadow box*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+/*The header grid item*/
+.item1{
+}
+/*The nav grid item*/
+.item2{
+    grid-column-start: 1/2;
 }
 
-.gridheader{
-    
-}
 /*The menu picture button*/
-.griditem1{
+.item3{
     grid-column-start: 2;
+    grid-row-start: 1;
 }
 /*The place an order button*/
-.griditem2{
+.item4{
     grid-column-start: 3;
     grid-row-start: 1;
 }
-/*Open Hours Header*/
-.griditem3{
-    grid-column-start: 2;
-    grid-row-start: 1;
-
+/*Menu preview*/
+.item5{
+    grid-column: 2/4;
+    grid-row-start: 2;
 }
-    /*End button CSS*/
+/*Google Map Grid Item*/
+.item6{
+    grid-column: 2/4;
+    grid-row-start: 3;
+}
 
-    /*Google Map*/
+.landingmenu{
+    text-align: center;
+    background-color: rgb(235, 85, 26);
+    padding:25px;
+}
+    /*Google Map Properties*/
 .gmap_canvas{
     text-align: center;
 }
