@@ -112,11 +112,12 @@ button{
 
 /*Try to get this work in "landing box" section*/
 .box{
+    display: grid;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 0px;
-    background-color: #e3e2df;
+    background-color: #e2dcc8;
     /*This box shadow is number 23 from the getcssscan.com website shadow box*/
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
@@ -147,22 +148,22 @@ button{
     grid-row-start: 2;
 }
 
-/*Google Map Grid Item*/
+/*About Us*/
 .item6{
     grid-column: 2/4;
-    grid-row-start: 4;
 }
 
-/*About Us*/
+/*Google Map Grid Item*/
 .item7{
     grid-column: 2/4;
     grid-row-start: 3;
 }
 
-.landingmenu{
+.headerbreak{
     text-align: center;
     background-color: rgb(235, 85, 26);
     padding:25px;
+    margin: 0;
 }
     /*Google Map Properties*/
 .gmap_canvas{
@@ -178,8 +179,8 @@ button{
 
 /*Appetizer Picture subitem*/
 .subitem1{
-    grid-column-start: 1;
-    grid-row-start: 1;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 /*Appetizer Table Subitem*/
